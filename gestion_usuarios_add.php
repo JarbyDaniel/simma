@@ -37,7 +37,7 @@ else
                      <img src="img/invernadero.jpg" border=0 width=350 height=80> 
              	    </td>
                   <td valign="top" align=center width=60%>
-                     <h1><font color=green>Sistema de Invernadero Automatizado </font></h1>
+                     <h1><font color=green>Sistema de Monitoreo Automatizado </font></h1>
              	    </td>
            	    </tr>
          	    </table>
@@ -54,10 +54,10 @@ include "menu_admin.php";
 
 if ((isset($_POST["enviado"])))
   {
-   //echo "grabar cambios modificación";
+   //echo "grabar cambios modificaciï¿½n";
    $nombre_usuario = $_POST["nombre_usuario"];
-   $nombre_usuario = str_replace("ñ","n",$nombre_usuario);
-   $nombre_usuario = str_replace("Ñ","N",$nombre_usuario);
+   $nombre_usuario = str_replace("ï¿½","n",$nombre_usuario);
+   $nombre_usuario = str_replace("ï¿½","N",$nombre_usuario);
    $num_id = $_POST["num_id"];
    $tipo_usuario = $_POST["tipo_usuario"];
    $direccion = $_POST["direccion"];
@@ -105,7 +105,7 @@ else
                     bgcolor="#FFFFFF" class="_espacio_celdas" 					
                     style="color: #FFFFFF; 
 			             font-weight: bold">
-			    <font FACE="arial" SIZE=2 color="#000044"> <b><h1>Gestión Usuarios </h1>  Adición Usuario</b></font>  
+			    <font FACE="arial" SIZE=2 color="#000044"> <b><h1>Gestion Agricultores </h1>  Adicion Usuario</b></font>  
           
 
 		       </td>
@@ -134,7 +134,7 @@ else
        </tr>
 	     <tr>
 				<td bgcolor="#A8DDA8" align=center> 
-				  <font FACE="arial" SIZE=2 color="#004400"> <b>Número Id</b></font>  
+				  <font FACE="arial" SIZE=2 color="#004400"> <b>Numero Id</b></font>  
 				</td> 	
 				<td bgcolor="#EEEEEE" align=center> 
 				  <input type="number" name=num_id value="" required>  
@@ -181,7 +181,7 @@ else
 
 	     <tr>
 				<td bgcolor="#A8DDA8" align=center> 
-				  <font FACE="arial" SIZE=2 color="#004400"> <b>Dirección</b></font>  
+				  <font FACE="arial" SIZE=2 color="#004400"> <b>Direccion</b></font>  
 				</td>
 				<td bgcolor="#EEEEEE" align=center> 
 				  <input type="text" name=direccion value="" required>  
@@ -189,7 +189,7 @@ else
 	     </tr>
 			 <tr>
 				<td bgcolor="#A8DDA8" align=center> 
-				  <font FACE="arial" SIZE=2 color="#004400"> <b>Teléfono</b></font>  
+				  <font FACE="arial" SIZE=2 color="#004400"> <b>Telefono</b></font>  
 				</td>
 			     <td bgcolor="#EEEEEE" align=center> 
 				  <input type="number" name=telefono value="" required>  
@@ -197,7 +197,7 @@ else
        </tr>
 			 <tr>
 				<td bgcolor="#A8DDA8" align=center> 
-				  <font FACE="arial" SIZE=2 color="#004400"> <b>Id Tarjeta</b></font>  
+				  <font FACE="arial" SIZE=2 color="#004400"> <b>Cultivo</b></font>  
 				</td>
 			     <td bgcolor="#EEEEEE" align=center> 
 				  <input type="number" name=id_tarjeta value="" required>  

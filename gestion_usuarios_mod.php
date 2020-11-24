@@ -26,8 +26,7 @@ else
      <html>
        <head>
           <link rel="stylesheet" href="css/estilos_virtual.css" 			type="text/css">
-           <title> Gestion Usuarios Modif - MERCURY - Puntos de Venta		
-		Application</title>
+           <title> Gestion Usuarios Modificar</title>
         </head>
        <body>
         <table width="100%" align=center cellpadding=5 border=0 bgcolor="#FFFFFF">
@@ -48,11 +47,11 @@ include "menu_admin.php";
 
 if ((isset($_POST["enviado"])))
   {
-   //echo "grabar cambios modificación";
+   //echo "grabar cambios modificaciï¿½n";
    $id_usu_enc = $_POST["id_usu"];
    $nombre_usuario = $_POST["nombre_usuario"];
-   $nombre_usuario = str_replace("ñ","n",$nombre_usuario);
-   $nombre_usuario = str_replace("Ñ","N",$nombre_usuario);
+   $nombre_usuario = str_replace("ï¿½","n",$nombre_usuario);
+   $nombre_usuario = str_replace("ï¿½","N",$nombre_usuario);
    $num_id = $_POST["num_id"];
    $tipo_usuario = $_POST["tipo_usuario"];
    $direccion = $_POST["direccion"];
@@ -96,7 +95,7 @@ else
 
 {
 
-// Consulta el nombre y demás datos del usuario a modificar
+// Consulta el nombre y demï¿½s datos del usuario a modificar
    $id_usu_enc = $_GET["id_usu"];
    $mysqli = new mysqli($host, $user, $pw, $db);
    $sqlenc = "SELECT * from usuarios";
@@ -136,7 +135,7 @@ else
                     bgcolor="#FFFFFF" class="_espacio_celdas" 					
                     style="color: #FFFFFF; 
 			             font-weight: bold">
-			    <font FACE="arial" SIZE=2 color="#000044"> <b><h1>Gestión Usuarios </h1>  Modificando Usuario: <u><?php echo $nombre_usuario; ?></u></b></font>  
+			    <font FACE="arial" SIZE=2 color="#000044"> <b><h1>Gestion Usuarios </h1>  Modificando Usuario: <u><?php echo $nombre_usuario; ?></u></b></font>  
           
 
 		       </td>
@@ -165,7 +164,7 @@ else
 	     </tr>
 	     <tr>
 				<td bgcolor="#D1E8FF" align=center> 
-				  <font FACE="arial" SIZE=2 color="#000044"> <b>Número Id</b></font>  
+				  <font FACE="arial" SIZE=2 color="#000044"> <b>Numero Id</b></font>  
 				</td> 	
 				<td bgcolor="#EEEEEE" align=center> 
 				  <input type="number" name=num_id value="<?php echo $num_id; ?>" required>  
@@ -215,7 +214,7 @@ else
 			  </tr>
 			  <tr>
 				<td bgcolor="#D1E8FF" align=center> 
-				  <font FACE="arial" SIZE=2 color="#000044"> <b>Dirección</b></font>  
+				  <font FACE="arial" SIZE=2 color="#000044"> <b>Direccion</b></font>  
 				</td>
 				<td bgcolor="#EEEEEE" align=center> 
 				  <input type="text" name=direccion value="<?php echo $direccion; ?>" required>  
@@ -223,7 +222,7 @@ else
 			  </tr>
 			  <tr>
 				<td bgcolor="#D1E8FF" align=center> 
-				  <font FACE="arial" SIZE=2 color="#000044"> <b>Id Tarjeta</b></font>  
+				  <font FACE="arial" SIZE=2 color="#000044"> <b>Cultitvo</b></font>  
 				</td>
 				<td bgcolor="#EEEEEE" align=center> 
 				  <input type="number" name=id_tarjeta min=1 max=9 value="<?php echo $id_tarjeta; ?>" required>  

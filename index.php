@@ -1,29 +1,48 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 	Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
   <html>
     <head>
+    <style> 
+		input[type=submit] {
+  			background-color: #9A856A;
+  			border: none;
+	  		color: white;
+  			padding: 8px 16px;
+  			text-decoration: none;
+	  		margin: 4px 2px;
+  			cursor: pointer;
+		}
+
+		body {
+ 			background-image: url('img/fondo.jpg');
+  			background-repeat: no-repeat;
+  			background-attachment: fixed;
+  			background-size: 100% 100%;
+		}
+	</style>
       <title> SIMMA
 		  </title>
       <meta http-equiv="refresh" content="15" />
     </head>
     <body>
+
       <table width="80%" align=center cellpadding=5 border=1 bgcolor="#FFFFFF">
     	 <tr>
-         <td valign="top" align=center width=70%  bgcolor="green"">
-           <img src="img/invernadero.jpg" width=650 height=200>
+         <td valign="top" align=center width=70%  bgcolor="white"">
+           <img src="img/invernadero.jpg" width=500 height=200>
          </td>
-         <td valign="top" align=center width=30% bgcolor="green"">
-           <h2> <font color=white>Ingreso de Usuarios </font></h2>
+         <td valign="top" align=center width=30% bgcolor="white"">
+           <h2 style="font-family:verdana"> <font color=#9FBC90>Ingreso de Usuarios </font></h2>
             <form method="POST" action="validar.php">
-              <table width="100%" align=center border=0 bgcolor="green">
+              <table width="100%" align=center border=0 bgcolor=white>
   	            <tr>
                   <td width="25%" height="20%" align="center" 				
-                    bgcolor="green" class="_espacio_celdas" 					
+                    bgcolor=#9FBC90 class="_espacio_celdas" 					
                     style="color: #FFFFFF; 
 			             font-weight: bold">
          		       Usuario:
                   </td>
                   <td width="25%" height="20%" align="center" 				
-                    bgcolor="green" class="_espacio_celdas" 					
+                    bgcolor=#9FBC90 class="_espacio_celdas" 					
                     style="color: #FFFFFF; 
 			             font-weight: bold">
                      <input type=text value="" name="login1" required> 
@@ -31,13 +50,13 @@
                 </tr>  
   	            <tr>
                   <td width="25%" height="20%" align="center" 				
-                    bgcolor="green" class="_espacio_celdas" 					
+                    bgcolor=#9FBC90 class="_espacio_celdas" 					
                     style="color: #FFFFFF; 
 			             font-weight: bold">
                     Password:
                   </td>
                   <td width="25%" height="20%" align="center" 				
-                    bgcolor="green" class="_espacio_celdas" 					
+                    bgcolor=#9FBC90 class="_espacio_celdas" 					
                     style="color: #FFFFFF; 
 			             font-weight: bold">
                      <input type=password value="" name="passwd1" required> 
@@ -45,13 +64,13 @@
                 </tr>  
   	            <tr>
                   <td width="25%" height="20%" align="center" 				
-                    bgcolor="green" class="_espacio_celdas" 					
+                    bgcolor=#9FBC90 class="_espacio_celdas" 					
                     style="color: #FFFFFF; 
 			             font-weight: bold">
                     &nbsp;&nbsp;
                   </td>
                   <td width="25%" height="20%" align="center" 				
-                    bgcolor="green" class="_espacio_celdas" 					
+                    bgcolor=#9FBC90	 class="_espacio_celdas" 					
                     style="color: #FFFFFF; 
 			             font-weight: bold">
                    <input type=submit value="Enviar" name="Enviar"> 
@@ -95,8 +114,8 @@
          </td>
  	     </tr>
  	     <tr>
-         <td valign="top" align=center width=80& colspan=2 bgcolor="green"">
-           <h1> <font color=white>Sistema Inteligente para la Medida y Monitorización en Agricultura</font></h1>
+         <td valign="top" align=center width=80& colspan=2 bgcolor=#618255>
+           <h1 style="font-family:verdana"> <font color=white>Sistema Inteligente para la Medida y Monitorización en Agricultura</font></h1>
          </td>
  	     </tr>
     	 <tr>

@@ -1,7 +1,7 @@
 <?php
-include "conexion.php";  // Conexión tiene la información sobre la conexión de la base de datos.
+include "conexion.php";  // Conexiï¿½n tiene la informaciï¿½n sobre la conexiï¿½n de la base de datos.
 
-// LAs siguientes son líneas de código HTML simple, para crear una página web
+// LAs siguientes son lï¿½neas de cï¿½digo HTML simple, para crear una pï¿½gina web
 // PROGRAMA DE MENU CONSULTA
                                                  
 session_start();
@@ -34,10 +34,10 @@ else
               <table width="100%" align=center border=0>
             	   <tr>
                   <td valign="top" align=center width=30%>
-                     <img src="img/invernadero.jpg" border=0 width=350 height=80> 
+                     <img src="img/descarga.png" border=0 width=200 height=200> 
              	    </td>
                   <td valign="top" align=center width=60%>
-                     <h1><font color=green>Sistema de Invernadero Automatizado </font></h1>
+                     <h1><font SIZE=7 color=blue> SIMMA </font></h1>
              	    </td>
            	    </tr>
          	    </table>
@@ -75,7 +75,7 @@ if ((isset($_POST["enviado"])))
     {
        $fecha_ini = $_POST["fecha_ini"];  // en estas variables se almacenan los datos de fechas recibidos del formulario HTML inicial
        $fecha_fin = $_POST["fecha_fin"];
-       $mysqli = new mysqli($host, $user, $pw, $db); // Aquí se hace la conexión a la base de datos.
+       $mysqli = new mysqli($host, $user, $pw, $db); // Aquï¿½ se hace la conexiï¿½n a la base de datos.
 ?>
     </table>
       <table width="80%" align=center cellpadding=5 border=0 bgcolor="#FFFFFF">
@@ -116,11 +116,11 @@ $id_tarjeta= $rowusu1[8];
 
 // la siguiente linea almacena en una variable denominada sql1, la consulta en lenguaje SQL que quiero realizar a la base de datos. Se consultan los datos de la tarjeta 1, porque en la tabla puede haber datos de diferentes tarjetas.
 $sql1 = "SELECT * from datos_medidos where ID_TARJ='$id_tarjeta' and fecha >= '$fecha_ini' and fecha <= '$fecha_fin' order by fecha"; 
-// la siguiente línea ejecuta la consulta guardada en la variable sql, con ayuda del objeto de conexión a la base de datos mysqli
+// la siguiente lï¿½nea ejecuta la consulta guardada en la variable sql, con ayuda del objeto de conexiï¿½n a la base de datos mysqli
 $result1 = $mysqli->query($sql1);
 // la siguiente linea es el inicio de un ciclo while, que se ejecuta siempre que la respuesta a la consulta de la base de datos
-// tenga algún registro resultante. Como la consulta arroja X resultados, se ejecutará X veces el siguiente ciclo while.
-// el resultado de cada registro de la tabla, se almacena en el arreglo row, row[0] tiene el dato del 1er campo de la tabla, row[1] tiene el dato del 2o campo de la tabla, así sucesivamente
+// tenga algï¿½n registro resultante. Como la consulta arroja X resultados, se ejecutarï¿½ X veces el siguiente ciclo while.
+// el resultado de cada registro de la tabla, se almacena en el arreglo row, row[0] tiene el dato del 1er campo de la tabla, row[1] tiene el dato del 2o campo de la tabla, asï¿½ sucesivamente
 $contador = 0;
 while($row1 = $result1->fetch_array(MYSQLI_NUM))
 {
@@ -163,7 +163,7 @@ while($row1 = $result1->fetch_array(MYSQLI_NUM))
  
 
     } // FIN DEL IF, si ya se han recibido las fechas del formulario
-   }  // FIN DEL IF, si la variable enviado existe, que es cuando ya se envío el formulario
+   }  // FIN DEL IF, si la variable enviado existe, que es cuando ya se envï¿½o el formulario
   else
     {
 ?>    
@@ -171,16 +171,16 @@ while($row1 = $result1->fetch_array(MYSQLI_NUM))
     <table width="70%" align=center cellpadding=5 border=0 bgcolor="#FFFFFF">
      <form method=POST action="consulta_datos_x_rango.php">
  	     <tr>	
-      		<td bgcolor="#CCEECC" align=center> 
-			   	  <font FACE="arial" SIZE=2 color="#004400"> <b>Fecha Inicial:</b></font>  
+      		<td bgcolor="#008080" align=center> 
+			   	  <font FACE="arial" SIZE=2 color="#FFFFFF"> <b>Fecha Inicial:</b></font>  
 				  </td>	
 				  <td bgcolor="#EEEEEE" align=center> 
 				    <input type="date" name="fecha_ini" value="" required>  
           </td>	
 	     </tr>
  	     <tr>	
-      		<td bgcolor="#CCEECC" align=center> 
-			   	  <font FACE="arial" SIZE=2 color="#004400"> <b>Fecha Final:</b></font>  
+      		<td bgcolor="#008080" align=center> 
+			   	  <font FACE="arial" SIZE=2 color="#FFFFFF"> <b>Fecha Final:</b></font>  
 				  </td>	
 				  <td bgcolor="#EEEEEE" align=center> 
 				    <input type="date" name="fecha_fin" value="" required>  

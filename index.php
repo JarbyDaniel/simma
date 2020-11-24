@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 	Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
   <html>
     <head>
-      <title> Página de Inicio Sistema de Invernadero Automatizado
+      <title> SIMMA
 		  </title>
       <meta http-equiv="refresh" content="15" />
     </head>
@@ -78,11 +78,11 @@
                        if ($mensaje == 1)
                          echo "El password del usuario no coincide.";
                        if ($mensaje == 2)
-                         echo "No hay usuarios con el login (usuario) ingresado o está inactivo.";
+                         echo "No hay usuarios con el login (usuario) ingresado o estï¿½ inactivo.";
                        if ($mensaje == 3)
                          echo "No se ha logueado en el Sistema. Por favor ingrese los datos.";
                        if ($mensaje == 4)
-                         echo "Su tipo de usuario, no tiene las credenciales suficientes para ingresar a esta opción.";
+                         echo "Su tipo de usuario, no tiene las credenciales suficientes para ingresar a esta opciï¿½n.";
                     ?>                         
                   </td>
                 </tr>  
@@ -96,34 +96,26 @@
  	     </tr>
  	     <tr>
          <td valign="top" align=center width=80& colspan=2 bgcolor="green"">
-           <h1> <font color=white>Sistema de Invernadero Automatizado</font></h1>
+           <h1> <font color=white>Sistema Inteligente para la Medida y MonitorizaciÃ³n en Agricultura</font></h1>
          </td>
  	     </tr>
     	 <tr>
          <td valign="top" align=left width=80& colspan=2 bgcolor="#C8DDC8">
-           <h2> <font color=black>Descripción del Sistema </font></h2>
-           <p align=justify> <font color=#555555 size=3>
-    	       ssdjag jags djagsdjasguwtejhgsd jasgdhagsqw jsgadjuwtequ ajsgdsag
-             ssdjag jags djagsdjasguwtejhgsd jasgdhagsqw jsgadjuwtequ ajsgdsag
-             ssdjag jags djagsdjasguwtejhgsd jasgdhagsqw jsgadjuwtequ ajsgdsag
-             ssdjag jags djagsdjasguwtejhgsd jasgdhagsqw jsgadjuwtequ ajsgdsag 
-          </font></p>
-          <br>
+       
            <h2> <font color=black>Servicios </font></h2>
            <p align=justify> <font color=#555555 size=3>
-    	       ssdjag jags djagsdjasguwtejhgsd jasgdhagsqw jsgadjuwtequ ajsgdsag
-             ssdjag jags djagsdjasguwtejhgsd jasgdhagsqw jsgadjuwtequ ajsgdsag
-             ssdjag jags djagsdjasguwtejhgsd jasgdhagsqw jsgadjuwtequ ajsgdsag
-             ssdjag jags djagsdjasguwtejhgsd jasgdhagsqw jsgadjuwtequ ajsgdsag 
+           
+          <ul>
+          <li><span style="font-weight: 400;">Monitoreo en tiempo real de las condiciones climatol&oacute;gicas y ambientales del &aacute;rea que rodea los cultivos por medio de sensores que recolectan par&aacute;metros para la caracterizaci&oacute;n del suelo y agricultura inteligente.</span></li>
+          <li><span style="font-weight: 400;"></span> <span style="font-weight: 400;">Sistema de notificaci&oacute;n de riego a partir de la humedad y las variables atmosf&eacute;ricas adquiridas, evitando trabajo extra a los productores proporcionando buenas decisiones de riego.</span></li>
+          <li><span style="font-weight: 400;"></span> <span style="font-weight: 400;">Despliegue de cultivos controlados: La plataforma posee una interfaz que permite que el agricultor tenga r&aacute;pido acceso a todos sus cultivos, y filtrarlos seg&uacute;n una variable espec&iacute;fica.</span></li>
+          <li><span style="font-weight: 400;"></span> <span style="font-weight: 400;">Control de inventario, donde el agricultor podr&aacute; administrar los insumos para cada uno de sus cultivos de forma r&aacute;pida y eficaz</span></li>
+          <li><span style="font-weight: 400;"></span> <span style="font-weight: 400;">Sistema de alerta en caso de alguna eventualidad, como el cambio dr&aacute;stico de alguna variable ambiental que pueda afectar de manera negativa el cultivo</span></li>
+          <li><span style="font-weight: 400;"></span> <span style="font-weight: 400;">Interfaz gr&aacute;fica que permite hacer comparaciones de la variaci&oacute;n de los par&aacute;metros captados por los sensores entre el d&iacute;a actual y otro d&iacute;a seg&uacute;n sea el requerimiento.</span></li>
+          <li><span style="font-weight: 400;"></span> <span style="font-weight: 400;">Control inteligente: Con el objetivo de lograr el control de un cultivo en particular, el agricultor realiza distintas actividades relacionadas con su gesti&oacute;n, como cambio de cultivo (planta), ver informes relacionados a la actividad en su negocio (Riego, cosecha, clima, abono, etc).</span></li>
+          </ul>
           </font></p>
-          <br>
-           <h2> <font color=black>Quienes Somos </font></h2>
-           <p align=justify> <font color=#555555 size=3>
-    	       ssdjag jags djagsdjasguwtejhgsd jasgdhagsqw jsgadjuwtequ ajsgdsag
-             ssdjag jags djagsdjasguwtejhgsd jasgdhagsqw jsgadjuwtequ ajsgdsag
-             ssdjag jags djagsdjasguwtejhgsd jasgdhagsqw jsgadjuwtequ ajsgdsag
-             ssdjag jags djagsdjasguwtejhgsd jasgdhagsqw jsgadjuwtequ ajsgdsag 
-          </font></p>
+       
          </td>
  	     </tr>
        </table>

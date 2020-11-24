@@ -37,10 +37,10 @@ else
               <table width="100%" align=center border=0>
             	   <tr>
                   <td valign="top" align=center width=30%>
-                     <img src="img/invernadero.jpg" border=0 width=350 height=80> 
+                     <img src="img/descarga.png" border=0 width=200 height=200> 
              	    </td>
-                  <td valign="top" align=center width=60%>
-                     <h1><font color=green>Sistema de Invernadero Automatizado </font></h1>
+                  <td valign="top" align=center width=0%>
+                     <h1><font color=blue> SIMMA </font size=7></h1>
              	    </td>
            	    </tr>
          	    </table>
@@ -62,7 +62,7 @@ include "menu_consul.php";
                     bgcolor="#FFFFFF" class="_espacio_celdas" 					
                     style="color: #FFFFFF; 
 			             font-weight: bold">
-			    <font FACE="arial" SIZE=2 color="#000044"> <b><h1>Consulta datos medidos (Últimos 5)</h1></b></font>  
+			    <font FACE="arial" SIZE=2 color="#000044"> <b><h1>Consulta de datos medidos (Ultimos 5)</h1></b></font>  
 
 
 		       </td>
@@ -78,7 +78,7 @@ include "menu_consul.php";
 
     <table width="70%" align=center cellpadding=5 border=0 bgcolor="#FFFFFF">
        <tr>
-         <td valign="top" align=center width=80& colspan=6 bgcolor="green"">
+         <td valign="top" align=center width=80& colspan=6 bgcolor="blue"">
            <h2> <font color=white>Ultimos datos medidos del Invernadero Automatizado asignado al Usuario</font></h2>
          </td>
  	     </tr>
@@ -114,13 +114,13 @@ $id_tarjeta= $rowusu1[8];
 
 
 // la siguiente linea almacena en una variable denominada sql1, la consulta en lenguaje SQL que quiero realizar a la base de datos. Se consultan los datos de la tarjeta 1, porque en la tabla puede haber datos de diferentes tarjetas.
-$sql1 = "SELECT * from datos_medidos where ID_TARJ='$id_tarjeta' order by id DESC LIMIT 5"; // Aquí se guarda en la variable sql la sentencia de consulta a realizar
-// la siguiente línea ejecuta la consulta guardada en la variable sql, con ayuda del objeto de conexión a la base de datos mysqli
+$sql1 = "SELECT * from datos_medidos where ID_TARJ='$id_tarjeta' order by id DESC LIMIT 5"; // Aquï¿½ se guarda en la variable sql la sentencia de consulta a realizar
+// la siguiente lï¿½nea ejecuta la consulta guardada en la variable sql, con ayuda del objeto de conexiï¿½n a la base de datos mysqli
 //echo "sql1 ...".$sql1;
 $result1 = $mysqli->query($sql1);
 // la siguiente linea es el inicio de un ciclo while, que se ejecuta siempre que la respuesta a la consulta de la base de datos
-// tenga algún registro resultante. Como la consulta arroja 5 resultados, los últimos que tenga la tabla, se ejecutará 5 veces el siguiente ciclo while.
-// el resultado de cada registro de la tabla, se almacena en el arreglo row, row[0] tiene el dato del 1er campo de la tabla, row[1] tiene el dato del 2o campo de la tabla, así sucesivamente
+// tenga algï¿½n registro resultante. Como la consulta arroja 5 resultados, los ï¿½ltimos que tenga la tabla, se ejecutarï¿½ 5 veces el siguiente ciclo while.
+// el resultado de cada registro de la tabla, se almacena en el arreglo row, row[0] tiene el dato del 1er campo de la tabla, row[1] tiene el dato del 2o campo de la tabla, asï¿½ sucesivamente
 $contador = 0;
 while($row1 = $result1->fetch_array(MYSQLI_NUM))
 {

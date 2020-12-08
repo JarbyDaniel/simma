@@ -32,10 +32,10 @@ else
               <table width="100%" align=center border=0>
             	   <tr>
                   <td valign="top" align=center width=30%>
-                     <img src="img/invernadero.jpg" border=0 width=350 height=80> 
+                     <img src="img/logo.jpg" border=0 width=80 height=80> 
              	    </td>
                   <td valign="top" align=center width=60%>
-                     <h1><font color=green>Sistema de Invernadero Automatizado </font></h1>
+                     <h1><font color=green>Sistema de Monitoreo Automatizado </font></h1>
              	    </td>
            	    </tr>
          	    </table>
@@ -57,7 +57,7 @@ include "menu_admin.php";
                     bgcolor="#FFFFFF" class="_espacio_celdas" 					
                     style="color: #FFFFFF; 
 			             font-weight: bold">
-			    <font FACE="arial" SIZE=2 color="#000044"> <b><h1>Gestión Usuarios </h1></b></font>  
+			    <font FACE="arial" SIZE=2 color="#000044"> <b><h1>Gestion Usuarios </h1></b></font>  
 
 
 		       </td>
@@ -169,10 +169,10 @@ include "menu_admin.php";
                     style=color: #000000; font-weight: bold >Usuario creado correctamente.";
                        if ($mensaje == 4)
                          echo "<td bgcolor=#FFDDDD class=_espacio_celdas_p 					
-                    style=color: #000000; font-weight: bold >Usuario no fue creado. Se presentó un inconveniente";
+                    style=color: #000000; font-weight: bold >Usuario no fue creado. Se presentï¿½ un inconveniente";
                        if ($mensaje == 5)
                          echo "<td bgcolor=#FFDDDD class=_espacio_celdas_p 					
-                    style=color: #000000; font-weight: bold >Usuario no fue creado. Ya existe usuario con la misma cédula.";
+                    style=color: #000000; font-weight: bold >Usuario no fue creado. Ya existe usuario con la misma cï¿½dula.";
 
              echo "</td></tr>
                   </table>
@@ -195,10 +195,10 @@ include "menu_admin.php";
 				  <font FACE="arial" SIZE=2 color="#004400"> <b>Nombre Usuario</b></font>  
 				</td>	
 				<td bgcolor="#A8DDA8" align=center> 
-				  <font FACE="arial" SIZE=2 color="#004400"> <b>Número Id</b></font>  
+				  <font FACE="arial" SIZE=2 color="#004400"> <b>Numero Id</b></font>  
 				</td> 	
 				<td bgcolor="#A8DDA8" align=center> 
-				  <font FACE="arial" SIZE=2 color="#004400"> <b>Dirección</b></font>  
+				  <font FACE="arial" SIZE=2 color="#004400"> <b>Direccion</b></font>  
 				</td> 	
 				<td bgcolor="#A8DDA8" align=center> 
 				  <font FACE="arial" SIZE=2 color="#004400"> <b>Usuario</b></font>  

@@ -7,8 +7,8 @@ echo '
                     bgcolor="#FFFFFF" class="_espacio_celdas" 					
                     style="color: #FFFFFF; 
 			             font-weight: bold">
-			           <a href="consulta_datos_medidos.php"><img src="img/consultar_datos_medidos_peq.jpg" border=0></a>
-			           <a href="consulta_datos_x_rango.php"><img src="img/consulta_datos_x_rango_peq.jpg" border=0></a>
+			           <a href="consulta_datos_medidos.php"><img src="img/Ultimo_dato - copia.png" border=0></a>
+			           <a href="consulta_datos_x_rango.php"><img src="img/consultar-copia.png" border=0></a>
 		             <hr>
 			           </td>
 		      </tr>

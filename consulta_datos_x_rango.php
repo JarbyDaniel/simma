@@ -34,10 +34,10 @@ else
               <table width="100%" align=center border=0>
             	   <tr>
                   <td valign="top" align=center width=30%>
-                     <img src="img/descarga.png" border=0 width=200 height=200> 
+                     <img src="img/logo.jpg" border=0 width=200 height=200> 
              	    </td>
                   <td valign="top" align=center width=60%>
-                     <h1><font SIZE=7 color=blue> SIMMA </font></h1>
+                     <h1><font SIZE=7 color=green> Sistema de Monitoreo Automatizado </font></h1>
              	    </td>
            	    </tr>
          	    </table>
@@ -63,7 +63,7 @@ include "menu_consul.php";
                     bgcolor="#FFFFFF" class="_espacio_celdas" 					
                     style="color: #FFFFFF; 
 			             font-weight: bold">
-			  <img src="img/consultar_datos_x_rango.jpg" border=0 width=115 height=115>    
+			  <img src="img/consultar.png" border=0 width=115 height=115>    
 		       </td>
 		     </tr>
 <?php
@@ -171,7 +171,7 @@ while($row1 = $result1->fetch_array(MYSQLI_NUM))
     <table width="70%" align=center cellpadding=5 border=0 bgcolor="#FFFFFF">
      <form method=POST action="consulta_datos_x_rango.php">
  	     <tr>	
-      		<td bgcolor="#008080" align=center> 
+      		<td bgcolor="#008000" align=center> 
 			   	  <font FACE="arial" SIZE=2 color="#FFFFFF"> <b>Fecha Inicial:</b></font>  
 				  </td>	
 				  <td bgcolor="#EEEEEE" align=center> 
@@ -179,7 +179,7 @@ while($row1 = $result1->fetch_array(MYSQLI_NUM))
           </td>	
 	     </tr>
  	     <tr>	
-      		<td bgcolor="#008080" align=center> 
+      		<td bgcolor="#008000" align=center> 
 			   	  <font FACE="arial" SIZE=2 color="#FFFFFF"> <b>Fecha Final:</b></font>  
 				  </td>	
 				  <td bgcolor="#EEEEEE" align=center> 

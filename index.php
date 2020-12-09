@@ -1,20 +1,3 @@
-<?php
-$hostDb="localhost";
-$nombreDb="monitoreo";
-$usuario="root";
-$clave="";
-$conexion=mysqli_connect($hostDb, $usuario, $clave ,$nombreDb);
-if (!$conexion){//Solo si no se conect? a la Bd
-  echo "Error al conectar a la Base de datos";
-  exit();
-}
-
-//$conexion=mysqli_connect('localhost','root','','monitoreo');
-
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 

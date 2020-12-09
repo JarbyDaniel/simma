@@ -7,7 +7,7 @@ $user = "root";
 
 $pw = "";
 
-$db = "labiii";
+$db = "inicial";
 
 $conn = mysqli_connect($host, $user, $pw, $db);
 
@@ -20,7 +20,6 @@ $conn = mysqli_connect($host, $user, $pw, $db);
 	    echo "Error creando BD: " . mysqli_error($conn) . "<br>";
 	}
 
-	$db = 'labiii';
 	mysqli_select_db ( $conn , $db);
 
 	if (!$conn) {

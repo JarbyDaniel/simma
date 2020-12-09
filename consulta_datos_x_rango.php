@@ -103,6 +103,10 @@ if ((isset($_POST["enviado"])))
          <td valign="top" align=center bgcolor="#E1E1E1">
             <b>Humedad</b>
          </td>
+         <td valign="top" align=center bgcolor="#E1E1E1">
+            <b>Presion</b>
+         </td>
+
  	     </tr>
 <?php
 
@@ -124,10 +128,11 @@ $result1 = $mysqli->query($sql1);
 $contador = 0;
 while($row1 = $result1->fetch_array(MYSQLI_NUM))
 {
+ $pres = $row1[4];
  $temp = $row1[2];
  $hum = $row1[3];
- $fecha = $row1[4];
- $hora = $row1[5];
+ $fecha = $row1[5];
+ $hora = $row1[6];
  $contador++;
 ?>
     	 <tr>
@@ -148,6 +153,9 @@ while($row1 = $result1->fetch_array(MYSQLI_NUM))
          </td>
          <td valign="top" align=center>
            <?php echo $hum." %"; ?> 
+         </td>
+         <td valign="top" align=center>
+           <?php echo $pres." %"; ?> 
          </td>
  	     </tr>
 <?php

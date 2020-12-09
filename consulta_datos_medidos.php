@@ -12,7 +12,6 @@ else
     {      
         $mysqli = new mysqli($host, $user, $pw, $db);
   	    $sqlusu = "SELECT * from tipo_usuario where id='2'"; //CONSULTA EL TIPO DE USUARIO CON ID=2, CONSULTA
-        echo "sqlusu...".$sqlusu;
         $resultusu = $mysqli->query($sqlusu);
         $rowusu = $resultusu->fetch_array(MYSQLI_NUM);
   	    $desc_tipo_usuario = $rowusu[1];
@@ -37,10 +36,10 @@ else
               <table width="100%" align=center border=0>
             	   <tr>
                   <td valign="top" align=center width=30%>
-                     <img src="img/descarga.png" border=0 width=200 height=200> 
+                     <img src="img/logo.jpg" border=0 width=200 height=200> 
              	    </td>
-                  <td valign="top" align=center width=0%>
-                     <h1><font color=blue> SIMMA </font size=7></h1>
+                  <td valign="top" align=center width=60%>
+                     <h1><font SIZE=7 color=green> Sistema de Monitoreo Automatizado </font></h1>
              	    </td>
            	    </tr>
          	    </table>
@@ -70,7 +69,7 @@ include "menu_consul.php";
                     bgcolor="#FFFFFF" class="_espacio_celdas" 					
                     style="color: #FFFFFF; 
 			             font-weight: bold">
-			  <img src="img/consultar_ultimos_datos.jpg" border=0 width=115 height=115>    
+			  <img src="img/Ultimo_dato.png" border=0 width=115 height=115>    
 		       </td>
 		     </tr>
 		    </table>
@@ -78,7 +77,7 @@ include "menu_consul.php";
 
     <table width="70%" align=center cellpadding=5 border=0 bgcolor="#FFFFFF">
        <tr>
-         <td valign="top" align=center width=80& colspan=6 bgcolor="blue"">
+         <td valign="top" align=center width=80& colspan=6 bgcolor="green"">
            <h2> <font color=white>Ultimos datos medidos del Invernadero Automatizado asignado al Usuario</font></h2>
          </td>
  	     </tr>

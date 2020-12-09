@@ -1,0 +1,7 @@
+Nombre BD: labiii
+
+Admin :
+jsalazar clave:23456
+
+Agricultor:
+prueba  clave:23456

@@ -33,7 +33,7 @@ else
     	   <tr>
        
            <td valign="top" align=left>
-               <img src="img/invernadero.jpg" border=0 width=350 height=80> 
+           <img src="img/logo.jpg" border=0 width=180 height=180> 
            </td>
            <td valign="top" align=right>
               <font FACE="arial" SIZE=2 color="#000000"> <b><u><?php  echo "Nombre Usuario</u>:   ".$_SESSION["nombre_usuario"];?> </b></font><br>

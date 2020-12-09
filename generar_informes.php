@@ -32,7 +32,7 @@ else
               <table width="100%" align=center border=0>
             	   <tr>
                   <td valign="top" align=center width=30%>
-                     <img src="img/logo.jpg" border=0 width=80 height=80> 
+                  <img src="img/logo.jpg" border=0 width=180 height=180> 
              	    </td>
                   <td valign="top" align=center width=60%>
                      <h1><font color=green>Sistema de Monitoreo Automatizado </font></h1>

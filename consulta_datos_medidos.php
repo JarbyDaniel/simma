@@ -77,7 +77,7 @@ include "menu_consul.php";
 
     <table width="80%" align=center cellpadding=5 border=0 bgcolor="#FFFFFF">
        <tr>
-         <td valign="top" align=center width=80& colspan=7 bgcolor="green"">
+         <td valign="top" align=center width=80& colspan=8 bgcolor="green"">
            <h2> <font color=white>Ultimos datos medidos del Invernadero Automatizado asignado al Usuario</font></h2>
          </td>
  	     </tr>
@@ -103,6 +103,9 @@ include "menu_consul.php";
          <td valign="top" align=center bgcolor="#E1E1E1">
             <b>Presión</b>
          </td>
+         <td valign="top" align=center bgcolor="#E1E1E1">
+            <b>Altitud</b>
+         </td>
  	     </tr>
 <?php
 
@@ -126,11 +129,12 @@ $result1 = $mysqli->query($sql1);
 $contador = 0;
 while($row1 = $result1->fetch_array(MYSQLI_NUM))
 {
+ $alt = $row1[5];
  $pres = $row1[4];
  $temp = $row1[2];
  $hum = $row1[3];
- $fecha = $row1[5];
- $hora = $row1[6];
+ $fecha = $row1[6];
+ $hora = $row1[7];
  $contador++;
 ?>
     	 <tr>
@@ -154,6 +158,9 @@ while($row1 = $result1->fetch_array(MYSQLI_NUM))
          </td>
          <td valign="top" align=center>
            <?php echo $pres." %"; ?> 
+         </td>
+         <td valign="top" align=center>
+           <?php echo $alt." %"; ?> 
          </td>
  	     </tr>
 <?php

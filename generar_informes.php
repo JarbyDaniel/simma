@@ -14,12 +14,18 @@ else
   	    $sqlusu = "SELECT * from tipo_usuario where id='1'"; //CONSULTA EL TIPO DE USUARIO CON ID=1, ADMINISTRADOR
         $resultusu = $mysqli1->query($sqlusu);
         $rowusu = $resultusu->fetch_array(MYSQLI_NUM);
-  	    $desc_tipo_usuario = $rowusu[1];
+        $desc_tipo_usuario = $rowusu[1];       
         if ($_SESSION["tipo_usuario"] != $desc_tipo_usuario)
           header('Location: index.php?mensaje=4');
     }
 
     $mysqli = new mysqli($host,$user,$pw,$db) or die($mysqli->error);
+    $id_usuario1 = $_SESSION["id_usuario"];
+    $sqlusu1 = "SELECT * from usuarios where id='$id_usuario1'"; //CONSULTA EL ID TARJETA DEL USUARIO LOGUEADO
+    //echo "sqlusu1 ...".$sqlusu1;
+    $resultusu1 = $mysqli->query($sqlusu1);
+    $rowusu1 = $resultusu1->fetch_array(MYSQLI_NUM);
+    $id_tarjeta= $rowusu1[8];
 
     $temperatura = '';
     $humedad = '';
@@ -27,7 +33,7 @@ else
     $altitud = '';
   
     //query to get data from the table
-    $sql2 = "SELECT * FROM datos_medidos";
+    $sql2 = "SELECT * FROM datos_medidos where ID_TARJ='$id_tarjeta'";
       $result = mysqli_query($mysqli, $sql2);
   
     //loop through the returned data

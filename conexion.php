@@ -30,6 +30,8 @@ $conn = mysqli_connect($host, $user, $pw, $db);
 	$sql2 = "CREATE TABLE IF NOT EXISTS `datos_medidos` (
 	  `temperatura` VARCHAR(50) NOT NULL,
 	  `humedad` VARCHAR(50) NOT NULL,
+      `presion` VARCHAR(50) NOT NULL,
+      `altitud` VARCHAR(50) NOT NULL,
 	  `id` INT NOT NULL AUTO_INCREMENT,
 	  PRIMARY KEY (`id`))";
 
@@ -39,8 +41,8 @@ $conn = mysqli_connect($host, $user, $pw, $db);
 	    echo "Error creando tabla: " . mysqli_error($conn). "<br>";
 	}
 			
-	$query = "INSERT INTO datos_medidos (temperatura, humedad) VALUES
-	('1', '2'), ('4', '5') ,('3', '5'),('6', '7'),('2', '4'),('0', '3'),('3', '2')";
+	$query = "INSERT INTO datos_medidos (temperatura, humedad, presion, altitud) VALUES
+	('1', '2', '3', '4'), ('4', '5', '2', '2') ,('3', '5', '2', '2'),('6', '7','2','2'),('2', '4','2', '2'),('0', '3','2','2'),('3', '2', '2', '2')";
 	
 	$conn->query($query);
 	mysqli_close($conn);

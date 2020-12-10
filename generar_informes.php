@@ -23,6 +23,8 @@ else
 
     $temperatura = '';
     $humedad = '';
+    $presion = '';
+    $altitud = '';
   
     //query to get data from the table
     $sql2 = "SELECT * FROM datos_medidos";
@@ -33,10 +35,14 @@ else
   
       $temperatura = $temperatura . '"'. $row['temperatura'].'",';
       $humedad = $humedad . '"'. $row['humedad'] .'",';
+      $presion = $presion . '"'. $row['presion'] .'",';
+      $altitud = $altitud . '"'. $row['altitud'] .'",';
     }
   
     $temperatura = trim($temperatura,",");
     $humedad = trim($humedad,",");
+    $presion= trim($presion,",");
+    $altitud = trim($altitud,",");
 
 ?>
     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 	Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -88,11 +94,10 @@ include "menu_admin.php";
 	    </tr>
 	  </table>
     <div class="container">	
-	    <h1>Temperatura y humedad</h1>       
-			<canvas id="chart" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>
-
-			<script>
-				var ctx = document.getElementById("chart").getContext('2d');
+	    <h1>Gráfica valores sensados</h1>       
+		  <canvas id="chart1" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>
+      <script>
+				var ctx = document.getElementById("chart1").getContext('2d');
     			var myChart = new Chart(ctx, {
         		type: 'line',
 		        data: {
@@ -104,14 +109,78 @@ include "menu_admin.php";
 		                backgroundColor: 'transparent',
 		                borderColor:'rgba(255,99,132)',
 		                borderWidth: 3
-		            },
-
-		            {
-		            	label: 'Humedad',
+		            }]
+		        },
+		     
+		        options: {
+		            scales: {scales:{yAxes: [{beginAtZero: false}], xAxes: [{autoskip: true, maxTicketsLimit: 20}]}},
+		            tooltips:{mode: 'index'},
+		            legend:{display: true, position: 'top', labels: {fontColor: 'rgb(255,255,255)', fontSize: 16}}
+		        }
+		    });
+      </script>
+       <canvas id="chart2" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>
+      <script>
+				var ctx = document.getElementById("chart2").getContext('2d');
+    			var myChart = new Chart(ctx, {
+        		type: 'line',
+		        data: {
+		            labels: [1,2,3,4,5,6,7,8,9],
+		            datasets: 
+		            [{
+		                label: 'Humedad',
 		                data: [<?php echo $humedad; ?>],
 		                backgroundColor: 'transparent',
-		                borderColor:'rgba(0,255,255)',
-		                borderWidth: 3	
+		                borderColor:'rgba(225,192,27)',
+		                borderWidth: 3
+		            }]
+		        },
+		     
+		        options: {
+		            scales: {scales:{yAxes: [{beginAtZero: false}], xAxes: [{autoskip: true, maxTicketsLimit: 20}]}},
+		            tooltips:{mode: 'index'},
+		            legend:{display: true, position: 'top', labels: {fontColor: 'rgb(255,255,255)', fontSize: 16}}
+		        }
+		    });
+      </script>
+       <canvas id="chart3" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>
+      <script>
+				var ctx = document.getElementById("chart3").getContext('2d');
+    			var myChart = new Chart(ctx, {
+        		type: 'line',
+		        data: {
+		            labels: [1,2,3,4,5,6,7,8,9],
+		            datasets: 
+		            [{
+		                label: 'Presion',
+		                data: [<?php echo $presion; ?>],
+		                backgroundColor: 'transparent',
+		                borderColor:'rgba(36,74,32)',
+		                borderWidth: 3
+		            }]
+		        },
+		     
+		        options: {
+		            scales: {scales:{yAxes: [{beginAtZero: false}], xAxes: [{autoskip: true, maxTicketsLimit: 20}]}},
+		            tooltips:{mode: 'index'},
+		            legend:{display: true, position: 'top', labels: {fontColor: 'rgb(255,255,255)', fontSize: 16}}
+		        }
+		    });
+      </script>
+       <canvas id="chart4" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>
+      <script>
+				var ctx = document.getElementById("chart4").getContext('2d');
+    			var myChart = new Chart(ctx, {
+        		type: 'line',
+		        data: {
+		            labels: [1,2,3,4,5,6,7,8,9],
+		            datasets: 
+		            [{
+		                label: 'Altitud',
+		                data: [<?php echo $altitud; ?>],
+		                backgroundColor: 'transparent',
+		                borderColor:'rgba(9,74,128)',
+		                borderWidth: 3
 		            }]
 		        },
 		     

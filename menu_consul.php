@@ -10,6 +10,7 @@ echo '
 					   <a href="consulta_datos_medidos.php"><img src="img/Ultimo_dato-copia.png" border=0></a>
 					   <a href="inventario.php"><img src="img/inventario - copia.png" border=0></a>
 					   <a href="consulta_datos_x_rango.php"><img src="img/consultar - copia.png" border=0></a>
+					   <a href="generar_informes - copia.php"><img src="img/informes.jpg" border=0></a>
 		             <hr>
 			           </td>
 		      </tr>
